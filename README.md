@@ -1,5 +1,7 @@
 # Workflow Diagram Builder
 
+<img src="skills/workflow-diagram/assets/workflow-diagram-builder.png" alt="Workflow Diagram Builder icon" width="160">
+
 Turn code or a process description into a clear Mermaid workflow diagram. See who does each step. Distinguish manual work from automated work. Revise the diagram through conversation.
 
 ## Start a diagram
@@ -7,6 +9,8 @@ Turn code or a process description into a clear Mermaid workflow diagram. See wh
 Ask the plugin to diagram a workflow. Paste its code or describe its steps. The plugin asks up to three opening questions. It skips facts you have already supplied.
 
 The questions establish the source, the reader, and the level of detail. You can answer them together or ask the plugin to choose reasonable defaults.
+
+Each answer informs the next question. The plugin creates the diagram when it has the required facts. A changed answer updates the current flow.
 
 The plugin returns Mermaid text. A compatible viewer displays that text as a diagram. Manual nodes are orange. Automated nodes are dark blue. Each node also has a visible type label.
 
@@ -25,10 +29,10 @@ Interaction happens through conversation. The diagram itself is a static Mermaid
 
 ## Use in Claude Code
 
-Load the plugin for one session from its parent project folder:
+Load the plugin for one session from this repository's folder:
 
 ```bash
-claude --plugin-dir ./plugins/workflow-diagram-builder
+claude --plugin-dir .
 ```
 
 Start the bundled skill:
@@ -40,7 +44,7 @@ Start the bundled skill:
 Validate the package:
 
 ```bash
-claude plugin validate ./plugins/workflow-diagram-builder --strict
+claude plugin validate . --strict
 ```
 
 The [Claude plugin reference](https://code.claude.com/docs/en/plugins-reference) documents the package format.
@@ -79,6 +83,6 @@ The default writing rules adapt the author's supplied auto and voice-align instr
 
 ## Verification
 
-Version 0.1.0 passes Claude Code's strict manifest check and the skill format check. The helper passes 13 checks. Four sample diagrams render with Mermaid 11.12.1. The rendered samples preserve special characters and show the expected node colors.
+Version 0.1.1 passes Claude Code's strict manifest check and the skill format check. The helper passes 13 checks. Four sample diagrams render with Mermaid 11.12.1. The rendered samples preserve special characters and show the expected node colors.
 
 The conversational interview is defined in the skill instructions. A live interactive host session has not been tested. See the [verification record](VERIFICATION.md) for the checks and review prompts.

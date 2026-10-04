@@ -3,7 +3,7 @@
 ## Trigger
 
 - The user asks the assistant to create or revise a workflow diagram.
-- The assistant loads the workflow-diagram skill through the host's skill system.
+- The workflow-diagram skill must be available in the current host.
 
 ## Inputs
 
@@ -17,10 +17,10 @@
 
 ## What happens
 
-1. The assistant checks which facts the user has already supplied.
-2. If the source is missing, the assistant asks which workflow to diagram. The assistant waits for the source or a request to proceed with unknown facts.
-3. If the reader is unknown, the assistant asks who needs to understand the diagram.
-4. If the level of detail is unknown, the assistant asks whether to show the full flow or the main route first. If the user asks the assistant to choose, the assistant uses a plain-language full flow.
+1. The assistant checks which facts the user has already supplied. Each new answer determines the next needed question. If the user changes an earlier answer, the assistant updates that fact in the current flow.
+2. If the source is missing, the assistant asks, "Which workflow should I diagram?" The assistant waits for the source or a request to proceed with unknown facts.
+3. If the reader is unknown, the assistant asks, "Who needs to understand this diagram?" The assistant offers staff, a developer, or both when choices would help. The assistant waits for the answer before asking the next question.
+4. If the level of detail is unknown, the assistant asks, "How much detail should I show?" The assistant offers the full flow or the main route first. The user can answer several questions together. If the user asks the assistant to choose, the assistant uses a plain-language full flow.
 5. The assistant traces the trigger, inputs, actors, actions, conditions, and outcomes in the selected source.
 6. If a required fact is missing, the assistant asks one focused question. If the user requests a draft, the assistant labels that fact as unknown.
 7. The assistant writes each action as a sentence with a subject, verb, and object. The assistant gives each decision a named actor and labeled routes.

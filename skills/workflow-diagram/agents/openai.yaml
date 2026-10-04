@@ -1,4 +1,6 @@
 interface:
   display_name: "Workflow Diagram Builder"
   short_description: "See who does each step in a workflow."
+  icon_small: "./assets/workflow-diagram-builder.png"
+  icon_large: "./assets/workflow-diagram-builder.png"
   default_prompt: "Use $workflow-diagram to ask me a few questions and create a clear Mermaid workflow diagram."

@@ -1,8 +1,10 @@
 {
   "name": "workflow-diagram-builder",
   "displayName": "Workflow Diagram Builder",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Explain a workflow with a Mermaid diagram. Answer a few questions, see who does each step, and revise the diagram through conversation.",
   "author": { "name": "Rachael Quisel" },
+  "repository": "https://github.com/RachaelQuisel/workflow-diagram-builder",
+  "icon": "./skills/workflow-diagram/assets/workflow-diagram-builder.png",
   "keywords": ["workflow", "diagram", "mermaid", "automation", "plain-language"]
 }

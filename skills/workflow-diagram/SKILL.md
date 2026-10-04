@@ -13,6 +13,8 @@ Read the current conversation before asking anything. Keep answers and correctio
 
 Ask one question at a time. Ask only questions whose answers would change the diagram. Use the host's question control when available. Otherwise, ask in the conversation and wait for the answer.
 
+After each answer, use the new fact to choose the next needed question. Create the diagram when the required facts are known. If the user changes an earlier answer, update that fact and continue from the current question.
+
 Use up to three opening questions. Skip any question the user has already answered.
 
 1. Ask, "Which workflow should I diagram?" Request code, configuration, or a description when the source is missing.
@@ -49,6 +51,8 @@ When the source contains only one component, describe the known boundary. Ask fo
 Read [diagram rules](references/diagram-rules.md) before the first diagram. Follow the user's preferred layout when it is known.
 
 Use a Mermaid flowchart. Mermaid is text that a compatible viewer displays as a diagram.
+
+A node represents one action or decision in the diagram.
 
 Every action node needs a subject, a verb, and an object. Name the actual actor. Write "The worker checks the Payout record ID format." Avoid "Check ID," "Validation," "It checks," and "The system" when the source names a specific system.
 
