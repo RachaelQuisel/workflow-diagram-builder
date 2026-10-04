@@ -1,0 +1,20 @@
+{
+  "title": "Process a request",
+  "start": "M",
+  "nodes": [
+    {"id": "M", "actor": "Staff", "action": "selects", "object": "Process", "mode": "manual"},
+    {"id": "A", "actor": "The worker", "action": "reads", "object": "the request", "mode": "automated"},
+    {"id": "D", "actor": "The worker", "action": "checks", "object": "whether the request is complete", "mode": "automated", "kind": "decision"},
+    {"id": "S", "actor": "The worker", "action": "returns", "object": "a confirmed result", "mode": "automated"},
+    {"id": "F", "actor": "The worker", "action": "returns", "object": "the missing fields", "mode": "automated"},
+    {"id": "R", "actor": "Staff", "action": "corrects", "object": "the request", "mode": "manual"}
+  ],
+  "edges": [
+    {"from": "M", "to": "A"},
+    {"from": "A", "to": "D"},
+    {"from": "D", "to": "S", "condition": "The request is complete."},
+    {"from": "D", "to": "F", "condition": "The request is incomplete."},
+    {"from": "F", "to": "R"},
+    {"from": "R", "to": "M"}
+  ]
+}

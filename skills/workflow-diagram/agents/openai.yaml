@@ -1,0 +1,4 @@
+interface:
+  display_name: "Workflow Diagram Builder"
+  short_description: "See who does each step in a workflow."
+  default_prompt: "Use $workflow-diagram to ask me a few questions and create a clear Mermaid workflow diagram."
