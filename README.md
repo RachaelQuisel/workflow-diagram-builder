@@ -83,6 +83,6 @@ The default writing rules adapt the author's supplied auto and voice-align instr
 
 ## Verification
 
-Version 0.1.1 passes Claude Code's strict manifest check and the skill format check. The helper passes 13 checks. Four sample diagrams render with Mermaid 11.12.1. The rendered samples preserve special characters and show the expected node colors.
+Version 1.1.0 passes Claude Code's strict manifest check and the skill format check. The helper passes 13 checks. Four sample diagrams render with Mermaid 11.12.1. The rendered samples preserve special characters and show the expected node colors.
 
 The conversational interview is defined in the skill instructions. A live interactive host session has not been tested. See the [verification record](VERIFICATION.md) for the checks and review prompts.

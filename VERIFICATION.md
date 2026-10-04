@@ -29,6 +29,6 @@ A live interactive host session has not been tested. Use these prompts to review
 
 ## Current package state
 
-Version 0.1.1 includes a 1024 by 1024 icon with transparent corners. The icon was visually reviewed before packaging.
+Version 1.1.0 includes a 1024 by 1024 icon with transparent corners. The icon was visually reviewed before packaging.
 
 The package is saved locally. Installation in Codex, Claude Desktop, Cowork, and claude.ai has not been verified. Marketplace publication has not been performed.
