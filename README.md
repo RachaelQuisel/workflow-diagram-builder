@@ -29,6 +29,13 @@ Interaction happens through conversation. The diagram itself is a static Mermaid
 
 ## Use in Claude Code
 
+Install the plugin by name from this repository:
+
+```bash
+claude plugin marketplace add RachaelQuisel/workflow-diagram-builder
+claude plugin install workflow-diagram-builder@workflow-diagram-builder
+```
+
 Load the plugin for one session from this repository's folder:
 
 ```bash
