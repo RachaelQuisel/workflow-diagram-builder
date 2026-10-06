@@ -1,0 +1,22 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "workflow-diagram-builder",
+  "description": "Explain a workflow with a Mermaid diagram. Answer a few questions, see who does each step, and revise the diagram through conversation.",
+  "owner": {
+    "name": "Rachael Quisel"
+  },
+  "plugins": [
+    {
+      "name": "workflow-diagram-builder",
+      "displayName": "Workflow Diagram Builder",
+      "version": "1.1.0",
+      "description": "Explain a workflow with a Mermaid diagram. Answer a few questions, see who does each step, and revise the diagram through conversation.",
+      "author": {
+        "name": "Rachael Quisel"
+      },
+      "repository": "https://github.com/RachaelQuisel/workflow-diagram-builder",
+      "source": "./",
+      "keywords": ["workflow", "diagram", "mermaid", "automation", "plain-language"]
+    }
+  ]
+}
