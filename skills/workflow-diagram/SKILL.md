@@ -1,9 +1,23 @@
 ---
 name: workflow-diagram
+version: 1.1.3
 description: Create or revise a Mermaid workflow diagram from code, configuration, or a process description. Use when a user wants to understand who does each step, distinguish manual and automated work, or improve a confusing workflow diagram. Ask a few focused questions and revise the diagram through conversation.
 ---
 
 # Workflow Diagram
+
+## Purpose in plain English
+
+This skill helps you explain a workflow with a diagram showing who does each step and what happens next.
+
+## How to explain the result
+
+For a client-facing explanation, use ordinary words and the requested format. Explain unfamiliar abbreviations. Name what each number counts and explain its practical meaning. Keep internal identifiers out of the explanation. Keep necessary technical details in the working steps and technical references.
+
+## Following the process
+
+Use the process below. Preserve its conditions, commands, checks, and approval rules. Use information the user already supplied. Follow the existing questions or stopping rules when required information is missing.
+
 
 Create a diagram that explains how the user's workflow works. Use the user's current source and answers. Keep the task focused on the diagram.
 
