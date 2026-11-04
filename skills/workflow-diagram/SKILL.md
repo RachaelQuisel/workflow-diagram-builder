@@ -1,6 +1,6 @@
 ---
 name: workflow-diagram
-version: 1.1.3
+version: 1.1.4
 description: Create or revise a Mermaid workflow diagram from code, configuration, or a process description. Use when a user wants to understand who does each step, distinguish manual and automated work, or improve a confusing workflow diagram. Ask a few focused questions and revise the diagram through conversation.
 ---
 
